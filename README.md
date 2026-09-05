@@ -1,52 +1,80 @@
-# Chess-AI-pygame-Minimax-
-## _Using the minimax algorithm (ALPHA BETA PRUNING)_ 
+# ♟️ Chess AI — Pygame Minimax
 
+A Python-based chess game built with **Pygame**, featuring an AI opponent powered by the **Minimax algorithm with Alpha-Beta pruning**.
 
-## Check out my youtube channel for more: [AUCTUX](https://www.youtube.com/c/Auctux)
- chess game and chess AI using the Minimax algorithm.
+## ✨ Features
 
-#### this code need a lot of optimization
+- ♟️ Play chess against the computer
+- 🤖 Minimax-based AI opponent
+- ⚡ Alpha-Beta pruning for optimized search
+- 🎯 Configurable AI difficulty / search depth
+- 🟢 Legal move highlighting
+- ♜ Castling support
+- ♙ Pawn promotion
+- 🔄 En passant support
+- ⚠️ Check and checkmate detection
+- 🤝 Stalemate and draw detection
+- 🎨 Multiple board themes
+- 🔊 Game sound effects
+- ↩️ Undo and restart options
+- 🖥️ Interactive Pygame interface
 
-## Features
+## 🧠 AI Algorithm
 
-- Basic chess moves
-- Castle move
-- En passant move
-- Check and check mate
-- tie Draw,
+The computer player uses **Minimax** to evaluate possible future positions and select a strong move.
 
-# Bugs & issues
-- No tie by move repetition
-- the chess ai is slow if the depth is more than 4
-- Also i haven't implemented the two player server. will probably do it in the future
-- ...
+**Alpha-Beta pruning** is used to eliminate branches that cannot affect the final decision, reducing the number of positions that need to be evaluated.
 
-> REQUIREMENTS
-```
-    pygame -> pip install pygame
-```
+The AI evaluation considers factors such as:
 
-## COMMAND
+- Piece values
+- Piece positioning
+- Board control
+- Game-ending positions
 
-`ESC` -> to quit the game and close the window
-`UP ARROW` & `DOWN ARROW` -> to change the game theme
+## 🛠️ Technologies Used
 
-## VISUALISATION OF PIECE BONUS MAPS
+- **Python**
+- **Pygame**
+- **Minimax**
+- **Alpha-Beta Pruning**
+- Object-Oriented Programming
 
-to visualize the piece bonus map , you just have to run the file visualizeMaps.py
-```
-    run : python visualizeMaps.py
-    Then to change the piece maps use the LEFT and RIGHT arrow keys 
-```
+## 📁 Project Structure
 
-#### EXAMPLES
->King
-![Screenshot (381)](https://user-images.githubusercontent.com/48150537/193106186-c7be1520-d318-412e-9f97-28c3a9ec5985.png)
-
-![Screenshot (380)](https://user-images.githubusercontent.com/48150537/193106197-70af6b9a-b2aa-4194-82f2-7efe89baa28e.png)
-
-![Screenshot (382)](https://user-images.githubusercontent.com/48150537/193106161-d15da808-0564-4fbc-b6c3-dd3c8cf240b4.png)
-
+Chess-AI-pygame-Minimax/
+│
+├── Minimax/
+│   ├── chessAI.py
+│   └── PointMap.py
+│
+├── pieces/
+│   ├── base.py
+│   ├── bishop.py
+│   ├── king.py
+│   ├── knight.py
+│   ├── pawn.py
+│   ├── queen.py
+│   └── rook.py
+│
+├── screens/
+│   ├── chess.py
+│   └── menu.py
+│
+├── assets/
+│   ├── images/
+│   ├── sounds/
+│   └── fonts/
+│
+├── board.py
+├── computer.py
+├── Fen.py
+├── main.py
+├── setting.py
+├── tools.py
+├── ui.py
+├── utils.py
+└── visualizeMaps.py
 
 ## CHESS THEMES
 
