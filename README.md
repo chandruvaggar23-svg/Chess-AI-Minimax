@@ -42,7 +42,7 @@ The AI evaluation considers factors such as:
 
 ## 📁 Project Structure
 
-Chess-AI-pygame-Minimax/
+Chess-AI-Minimax/
 │
 ├── Minimax/
 │   ├── chessAI.py
